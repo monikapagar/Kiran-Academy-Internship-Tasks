@@ -1,12 +1,3 @@
-Kiran Academy - IT Training & Placement
-SQL INDUSTRIAL PRACTICAL TASK
-E-Commerce Product Inventory Management - DDL + DML + Operators
-60 Small Practical Tasks Solutions
-
-==================================================
-Part A - Database & Table Creation
-==================================================
-
 Task 1: Create a database named ecommerce_db.
 CREATE DATABASE ecommerce_db;
 
@@ -30,11 +21,6 @@ DESC products;
 
 Task 5: Display all tables available inside ecommerce_db.
 SHOW TABLES;
-
-
-==================================================
-Part B - INSERT Operations
-==================================================
 
 Task 6: Insert product record 201
 INSERT INTO products VALUES (201, 'Galaxy M55', 'Mobile', 'Samsung', 32000, 15, 'Pune', 'Available');
@@ -65,11 +51,6 @@ INSERT INTO products VALUES (209, 'OnePlus Pad', 'Tablet', 'OnePlus', 35000, 5, 
 
 Task 15: Insert product record 210
 INSERT INTO products VALUES (210, 'Bluetooth Speaker', 'Accessories', 'JBL', 7000, 25, 'Mumbai', 'Available');
-
-
-==================================================
-Part C - Basic SELECT & Operator Practice
-==================================================
 
 Task 16: Display all records from products.
 SELECT * FROM products;
@@ -116,11 +97,6 @@ SELECT * FROM products WHERE quantity > 10;
 Task 30: Display products whose quantity is less than 10.
 SELECT * FROM products WHERE quantity < 10;
 
-
-==================================================
-Part D - Logical Operators
-==================================================
-
 Task 31: Display products from Pune AND Mobile category.
 SELECT * FROM products WHERE city = 'Pune' AND category = 'Mobile';
 
@@ -150,11 +126,6 @@ SELECT * FROM products WHERE brand = 'Samsung' OR brand = 'Apple';
 
 Task 40: Display products where city = Pune AND status = Available AND quantity > 10.
 SELECT * FROM products WHERE city = 'Pune' AND status = 'Available' AND quantity > 10;
-
-
-==================================================
-Part E - Slightly Higher Operator Logic
-==================================================
 
 Task 41: Display products whose price is BETWEEN 25000 and 50000.
 SELECT * FROM products WHERE price BETWEEN 25000 AND 50000;
@@ -186,11 +157,6 @@ SELECT * FROM products WHERE product_name LIKE '%Pad%';
 Task 50: Display products where category = Mobile AND (price > 30000 OR quantity > 15).
 SELECT * FROM products WHERE category = 'Mobile' AND (price > 30000 OR quantity > 15);
 
-
-==================================================
-Part F - UPDATE Operations
-==================================================
-
 Task 51: Update the price of Galaxy M55 from 32000 to 34000.
 UPDATE products SET price = 34000 WHERE product_name = 'Galaxy M55';
 
@@ -208,11 +174,6 @@ UPDATE products SET quantity = quantity + 5 WHERE city = 'Pune';
 
 Task 56: Update the status to Out of Stock for products whose quantity is less than 5.
 UPDATE products SET status = 'Out of Stock' WHERE quantity < 5;
-
-
-==================================================
-Part G - DELETE Operations
-==================================================
 
 Task 57: Delete the product whose product_id = 210.
 DELETE FROM products WHERE product_id = 210;
